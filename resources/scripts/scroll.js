@@ -25,3 +25,23 @@ window.addEventListener('scroll', () => {
   // CHANGE COLOR side bar
  const bgSlider = document.querySelector('.slider');
 
+  window.addEventListener('scroll', () => {
+    console.log(window.pageXOffset)
+    if (pageXOffset > 800) {
+      bgSlider.style.backgroundColor = "#430057";
+    }
+    if (pageXOffset < 800) {
+      bgSlider.style.backgroundColor = "#FF6720";
+    }
+    if (pageXOffset > 2000) {
+      bgSlider.style.backgroundColor = "#27B289";
+    }
+    if (pageXOffset > 3960) {
+      bgSlider.style.backgroundColor = "#071F81";
+    }
+    if (pageXOffset > 4500) {
+      bgSlider.style.backgroundColor = "#FF6720";
+    }
+  })
+
+  // END CHANGE COLOR side bar

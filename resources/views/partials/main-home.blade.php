@@ -2,10 +2,10 @@
   <div id="logoAnim">
     <div class="content flex w-full h-screen items-center antialiased">
       <div class="titles text-center w-1/2">
-        <h2 class="animate__faster animate__animated animate__fadeInDown">INTELLIGENCE.</h2>
-        <h2 class="animate__fast animate__animated animate__fadeInDown">TECHNOLOGY.</h2>
-        <h2 class="text-[#ff6720] animate__slow animate__animated animate__fadeInDown">CREATIVE.</h2>
-        <h2 class="animate__delay-1s text-[#ff6720] animate__animated animate__fadeInDown">PEOPLE.</h2>
+        <h2 class="animate__faster animate__animated animate__fadeInDown"><?php echo get_field('first_line_title') ?></h2>
+        <h2 class="animate__fast animate__animated animate__fadeInDown"><?php echo get_field('second_line_title') ?></h2>
+        <h2 class="text-[#ff6720] animate__slow animate__animated animate__fadeInDown"><?php echo get_field('third_line_title') ?></h2>
+        <h2 class="animate__delay-1s text-[#ff6720] animate__animated animate__fadeInDown"><?php echo get_field('fouth_line_title') ?></h2>
       </div>
       <div class="w-1/2">
       <img id="logo" data-mouse-force="60" src="../../images/X_blue.png" style="display: none;">

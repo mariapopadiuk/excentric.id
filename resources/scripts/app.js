@@ -88,44 +88,44 @@ const main = async (err) => {
   const aboutThirdPage = document.querySelector('.about-third-page-gradient');
 
 
-  // window.addEventListener('scroll', changeContent);
+  window.addEventListener('scroll', changeContent);
 
-  // function changeContent() {
-  //   if (pageYOffset > 100) {
-  //     aboutPage.classList.remove('about-page-gradient');
-  //     aboutPage.classList.add('about-second-page-gradient');
-  //     firstTitle.classList.add('hide');
-  //     firstText.classList.add('hide');
-  //     secondTitle.classList.remove('hide');
-  //     secondText.classList.remove('hide');
+  function changeContent() {
+    if (pageYOffset > 100) {
+      aboutPage.classList.remove('about-page-gradient');
+      aboutPage.classList.add('about-second-page-gradient');
+      firstTitle.classList.add('hide');
+      firstText.classList.add('hide');
+      secondTitle.classList.remove('hide');
+      secondText.classList.remove('hide');
 
-  //   }
-  //   if (pageYOffset > 250) {
-  //     aboutPage.classList.remove('about-second-page-gradient');
-  //     aboutPage.classList.add('about-third-page-gradient');
-  //     secondTitle.classList.add('hide');
-  //     secondText.classList.add('hide');
-  //     thirdTitle.classList.remove('hide');
-  //     thirdText.classList.remove('hide');
+    }
+    if (pageYOffset > 250) {
+      aboutPage.classList.remove('about-second-page-gradient');
+      aboutPage.classList.add('about-third-page-gradient');
+      secondTitle.classList.add('hide');
+      secondText.classList.add('hide');
+      thirdTitle.classList.remove('hide');
+      thirdText.classList.remove('hide');
 
-  //   }
-  //   if (pageYOffset < 100) {
-  //     aboutPage.classList.remove('about-second-page-gradient');
-  //     aboutPage.classList.add('about-page-gradient');
-  //     secondTitle.classList.add('hide');
-  //     secondText.classList.add('hide');
-  //     firstTitle.classList.remove('hide');
-  //     firstText.classList.remove('hide');
-  //   }
-  //   if (pageYOffset < 250 && pageYOffset > 100) {
-  //     thirdTitle.classList.add('hide');
-  //     thirdText.classList.add('hide');
-  //     aboutPage.classList.add('about-second-page-gradient');
-  //     aboutPage.classList.remove('about-third-page-gradient');
-  //     secondTitle.classList.remove('hide');
-  //     secondText.classList.remove('hide');
-  //   }
-  // }
+    }
+    if (pageYOffset < 100) {
+      aboutPage.classList.remove('about-second-page-gradient');
+      aboutPage.classList.add('about-page-gradient');
+      secondTitle.classList.add('hide');
+      secondText.classList.add('hide');
+      firstTitle.classList.remove('hide');
+      firstText.classList.remove('hide');
+    }
+    if (pageYOffset < 250 && pageYOffset > 100) {
+      thirdTitle.classList.add('hide');
+      thirdText.classList.add('hide');
+      aboutPage.classList.add('about-second-page-gradient');
+      aboutPage.classList.remove('about-third-page-gradient');
+      secondTitle.classList.remove('hide');
+      secondText.classList.remove('hide');
+    }
+  }
 };
 //END Change text on scroll
 

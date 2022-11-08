@@ -78,3 +78,23 @@ collect(['setup', 'filters'])
 
 add_theme_support('sage');
 
+/*
+|--------------------------------------------------------------------------
+| My functions
+|--------------------------------------------------------------------------
+|
+|
+*/
+
+/**
+ * Debug
+ */
+if (!function_exists('pr')) {
+    function pr($v, $return = false)
+    {
+        $dump = sprintf('<pre class="dump" style="text-align:left;">%s</pre>', print_r($v, true));
+        if ($return) return $dump;
+        echo $dump;
+    }
+}
+
