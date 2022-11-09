@@ -2,8 +2,8 @@
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="original" x="0px" y="0px" viewBox="0 0 1669.1 373.9" style="enable-background:new 0 0 1669.1 373.9;" xml:space="preserve">
     <style type="text/css">
-      .st0{fill:#FFFFFF;}
-      .st1{fill:#490355;}
+      .st0{fill:#FF6720;}
+      .st1{fill:#FFFFFF;}
     </style>
   <g>
     <g>

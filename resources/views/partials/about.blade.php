@@ -1,4 +1,4 @@
-<div class="flex h-[150vh] ">
+<div class="flex h-[150vh] overflow-hidden">
   <div class="min-w-[100vw] h-screen about-page duration-300 transition-all about-page-gradient fixed z-10">
     <div class="container mx-auto">
 

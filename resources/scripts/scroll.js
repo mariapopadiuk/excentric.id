@@ -1,47 +1,35 @@
-document.querySelectorAll('.st0').forEach(e => e.style.fill = '#FF6720');
-document.querySelectorAll('.st1').forEach(e => e.style.fill = '#FFF');
+// CHANGE COLOR side bar
+const bgSlider = document.querySelector('.slider');
+const pageWidth = window.innerWidth;
+const lineV = document.querySelector('.line-vert');
+const lineH = document.querySelector('.line-hor');
+const aboutUsContent = document.querySelectorAll('.about-us-content');
+
+function changeColors(bgCol, lineVCol, lineHCol, logoPrCol, logoSecCol) {
+  bgSlider.style.backgroundColor = bgCol;
+  lineV.style.backgroundColor = lineVCol;
+  lineH.style.backgroundColor = lineHCol;
+  document.querySelectorAll('.st1').forEach(e => e.style.fill = logoPrCol);
+  document.querySelectorAll('.st0').forEach(e => e.style.fill = logoSecCol);
+}
 
 window.addEventListener('scroll', () => {
-  if (pageXOffset > 800) {
-    document.querySelectorAll('.st0').forEach(e => e.style.fill = '#fff');
-    document.querySelectorAll('.st1').forEach(e => e.style.fill = '#490355');
+  const xOffset = window.pageXOffset;
+  if (xOffset > pageWidth / 2) {
+    changeColors("#430057", "#FF6720", "#FF6720", '#430057', '#fff')
+    aboutUsContent.forEach(e => e.classList.add('animate__fadeInDown'));
+  } else {
+    changeColors("#FF6720", "#3d3935", "#3d3935", '#fff', '#FF6720')
   }
-  if (pageXOffset < 800) {
-    document.querySelectorAll('.st0').forEach(e => e.style.fill = '#FF6720');
-    document.querySelectorAll('.st1').forEach(e => e.style.fill = '#FFF');
+  if (xOffset > pageWidth * 1.5) {
+    changeColors("#27B289", "#430057", "#430057", '#FFF', '#25B289')
   }
-  if (pageXOffset > 2700) {
-    document.querySelectorAll('.st0').forEach(e => e.style.fill = '#25B289');
-    document.querySelectorAll('.st1').forEach(e => e.style.fill = '#FFF');
+  if (xOffset > pageWidth * 2.5) {
+    changeColors("#071F81", "#27B289", "#27B289", '#FFF', '#FF6720')
   }
-  if (pageXOffset > 4600) {
-    document.querySelectorAll('.st0').forEach(e => e.style.fill = '#FF6720');
-    document.querySelectorAll('.st1').forEach(e => e.style.fill = '#FFF');
+  if (xOffset > pageWidth * 3.5) {
+    changeColors("#FF6720", "#071F81", "#071F81", '#FFF', '#FF6720')
   }
 })
-
-// END CHANGE COLOR LOGO
-
-  // CHANGE COLOR side bar
- const bgSlider = document.querySelector('.slider');
-
-  window.addEventListener('scroll', () => {
-    console.log(window.pageXOffset)
-    if (pageXOffset > 800) {
-      bgSlider.style.backgroundColor = "#430057";
-    }
-    if (pageXOffset < 800) {
-      bgSlider.style.backgroundColor = "#FF6720";
-    }
-    if (pageXOffset > 2000) {
-      bgSlider.style.backgroundColor = "#27B289";
-    }
-    if (pageXOffset > 3960) {
-      bgSlider.style.backgroundColor = "#071F81";
-    }
-    if (pageXOffset > 4500) {
-      bgSlider.style.backgroundColor = "#FF6720";
-    }
-  })
 
   // END CHANGE COLOR side bar

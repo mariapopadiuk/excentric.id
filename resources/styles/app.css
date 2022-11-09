@@ -1,7 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import 'animate.css';
+@import './animate.css';
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @layer base {
@@ -214,4 +214,21 @@ canvas{
 .loading-dots--dot:nth-child(4) {
   opacity: 0.3;
   animation-delay: 1.2s;
+}
+.slider, .line-vert, .line-hor, .st0, .st1{
+  transition: all 1s;
+}
+.menu-item{
+  position: relative;
+}
+.menu-item:hover::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 25px;
+  background: #fff;
+  bottom: 0;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%);
 }

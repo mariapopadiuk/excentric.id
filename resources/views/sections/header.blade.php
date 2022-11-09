@@ -21,9 +21,9 @@
         </a>
     </div>
     {{-- SIDEBAR --}}
-    <div class="slider fixed right-0 top-0 bottom-0 bg-[#FF6720] w-[120px] text-white z-50 ">
-        <div class="w-[80px] bg-[#3d3935] h-[20px] top-0 right-0 absolute"></div>
-        <div class="w-[20px] bg-[#3d3935] h-[80px] top-0 right-0 absolute"></div>
+    <div class="animate__animated animate__fadeInRightBig animate__slow slider fixed right-0 top-0 bottom-0 bg-[#FF6720] w-[120px] text-white z-10">
+        <div class="line-vert w-[80px] bg-[#3d3935] h-[20px] top-0 right-0 absolute"></div>
+        <div class="line-hor w-[20px] bg-[#3d3935] h-[80px] top-0 right-0 absolute"></div>
 
         <div class="scrollflot">
             <div class="fixed bottom-[50px] right-[40px] px-3">Scroll</div>
