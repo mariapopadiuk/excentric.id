@@ -4,6 +4,10 @@ const pageWidth = window.innerWidth;
 const lineV = document.querySelector('.line-vert');
 const lineH = document.querySelector('.line-hor');
 const aboutUsContent = document.querySelectorAll('.about-us-content');
+const titleClient = document.querySelector('.titleClient');
+const textClient = document.querySelector('.textClient');
+const titleServices = document.querySelector('.titleServices');
+const textServices = document.querySelector('.textServices');
 
 function changeColors(bgCol, lineVCol, lineHCol, logoPrCol, logoSecCol) {
   bgSlider.style.backgroundColor = bgCol;
@@ -23,9 +27,13 @@ window.addEventListener('scroll', () => {
   }
   if (xOffset > pageWidth * 1.5) {
     changeColors("#27B289", "#430057", "#430057", '#FFF', '#25B289')
+    titleClient.classList.add('animate__fadeInDown');
+    textClient.classList.add('animate__fadeInRightBig');
   }
   if (xOffset > pageWidth * 2.5) {
     changeColors("#071F81", "#27B289", "#27B289", '#FFF', '#FF6720')
+    titleServices.classList.add('animate__fadeInUp');
+    textServices.classList.add('animate__fadeInUp');
   }
   if (xOffset > pageWidth * 3.5) {
     changeColors("#FF6720", "#071F81", "#071F81", '#FFF', '#FF6720')

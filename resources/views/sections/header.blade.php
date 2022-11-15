@@ -1,11 +1,11 @@
 <header>
     <div class=" h-40 w-full fixed flex justify-center">
 
-        <div class="flex align-center w-1/6 cursor-pointer">
+    <a href="#main-home" class="flex align-center w-1/6 cursor-pointer">
 
-            @include('components.svg.logo')
+           @include('components.svg.logo')
 
-        </div>
+           </a>
 
         <div class="burger space-y-2 absolute hover:scale-90 duration-300 transition-all left-10 top-10 cursor-pointer">
             <div class="w-8 h-1 bg-white "></div>

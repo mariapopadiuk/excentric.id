@@ -96,10 +96,10 @@
         </div>
       </div>
       {{--CONTENT--}}
-      <div class="w-2/5 tracking-wide antialiased">
+      <div class="w-2/5 antialiased">
         <div class="w-2/4">
-          <h2 class="text-[104px] text-[#25B289] font-bold uppercase mb-5 animate__slow animate__animated animate__fadeInDown"><?php echo get_field('title_client') ?></h2>
-          <p class="text-[#FFF] font-extralight text-lg tracking-wide animate__animated animate__fadeInRightBig animate__slow"><?php echo get_field('text_client') ?></p>
+          <h2 class="text-[104px] title-font text-[#25B289] font-bold uppercase mb-5 animate__slow animate__animated titleClient"><?php echo get_field('title_client') ?></h2>
+          <p class="text-[#FFF] tracking-wide font-extralight text-base tracking-wide animate__animated  animate__slow textClient"><?php echo get_field('text_client') ?></p>
         </div>
       </div>
     </div>

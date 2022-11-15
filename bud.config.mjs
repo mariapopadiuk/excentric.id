@@ -29,7 +29,7 @@ export default async (app) => {
     /**
      * Proxy origin (`WP_HOME`)
      */
-    .proxy("http://localhost:10018/")
+    .proxy("http://localhost:10053/")
 
     /**
      * Development origin
@@ -39,7 +39,7 @@ export default async (app) => {
     /**
      * URI of the `public` directory
      */
-    .setPublicPath("/app/themes/sage/public/")
+    .setPublicPath("/app/themes/excentrictheme/public/")
 
     /**
      * Generate WordPress `theme.json`

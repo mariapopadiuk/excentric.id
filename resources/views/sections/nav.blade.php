@@ -21,7 +21,7 @@
       </div>
     </li>
     <li class="flex">
-      <div class="nav-title   w-1/2">
+      <div class="nav-title w-1/2">
         <a class="cursor-pointer uppercase flex justify-center"><span class="menu-item hover:text-[#ff6720] text-7xl font-medium text-white">Clients.</span></a>
       </div>
       <div class="nav-content w-1/2 pl-28 text-2xl text-white whitespace-normal absolute right-0 top-0">
