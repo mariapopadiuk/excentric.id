@@ -8,6 +8,7 @@ const titleClient = document.querySelector('.titleClient');
 const textClient = document.querySelector('.textClient');
 const titleServices = document.querySelector('.titleServices');
 const textServices = document.querySelector('.textServices');
+const contactsWhiteBlock = document.querySelector('.contacts-white-block');
 
 function changeColors(bgCol, lineVCol, lineHCol, logoPrCol, logoSecCol) {
   bgSlider.style.backgroundColor = bgCol;
@@ -37,6 +38,7 @@ window.addEventListener('scroll', () => {
   }
   if (xOffset > pageWidth * 3.5) {
     changeColors("#FF6720", "#071F81", "#071F81", '#FFF', '#FF6720')
+    contactsWhiteBlock.classList.add('animate__fadeInLeftBig');
   }
 })
 

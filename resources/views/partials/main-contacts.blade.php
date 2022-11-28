@@ -1,7 +1,7 @@
 <section id="main-contacts" class="min-w-full min-h-full h-screen bg-[#082081]">
   <div class="container max-w-[1240px] h-full mx-auto flex items-center antialiased">
     <div class="w-1/2">
-      <div class="mb-[155px]">
+      <div class="mb-[100px]">
         <!-- <?php echo get_field('title_contacts_1') ?>
       <?php echo get_field('subtitle_on_top') ?> -->
         <h1 class="title-font text-white text-[104px] font-bold uppercase ">Hello<span class="text-[#FF6720]">.</span></h1>
@@ -12,7 +12,7 @@
 
         <div class="relative z-10">
           <div class="absolute top-1/2 transform -translate-y-1/2 w-full -z-10">
-            <div class="bg-[#FFF] pl-20 py-12  flex justify-end items-center rounded-full text-center animate__faster animate__animated animate__fadeInLeftBig">
+            <div class="contacts-white-block bg-[#FFF] pl-20 py-12 flex justify-end items-center rounded-full text-center animate__faster animate__animated ">
               <div class="w-1/2 text-left text-base font-normal ">
                 <!-- <?php echo get_field('street_zipcode_number') ?> -->
                 <p class="mb-2">Avenida Almirante<br>
@@ -35,13 +35,13 @@
         </div>
       </div>
     </div>
-    <div class="w-1/2 pl-10 pt-[110px]">
+    <div class="w-1/2 pl-14 pt-[110px]">
       <div class="w-3/4">
         <?php echo do_shortcode('[contact-form-7 id="20" title="Contact"]') ?>
       </div>
       <div>
         <!-- <?php echo get_field('title_contacts_2') ?> -->
-        <h1 class="title-font text-[#FF6720] text-[104px] font-bold uppercase ">Contacts<span class="text-white text-[104px]">.</span></h1>
+        <h1 class="title-font text-[#FF6720] text-[104px] font-bold uppercase">Contacts<span class="text-white text-[104px]">.</span></h1>
       </div>
     </div>
   </div>

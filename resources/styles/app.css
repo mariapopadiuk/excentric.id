@@ -11,13 +11,11 @@
     background: black;
   }
 }
-
 .title-font{
   font-family: 'Barlow Condensed', sans-serif;
 }
 body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
-
 }
 .page-first{
   background-position: center center;
@@ -31,9 +29,29 @@ body {
 canvas{
   margin-left: -30vw;
 }
+/* Align titles on home page */
+.wrap {
+  float: left;
+  position: relative;
+  left: 10%;
+}
+.content-home {
+  float: left;
+  position: relative;
+}
+/* END Align titles on home page */
 
-/*END ICON LINKEDIN*/
-
+/* hover close button nav page */
+.close-button:hover{
+fill: black;
+}
+/* END hover close button nav page */
+h1.mar{
+margin-bottom: 0;
+}
+h2.mar+span{
+  margin-top: 0;
+}
 .titles{
   color: #FFFFFF;
   font-size: 74px;
@@ -42,7 +60,7 @@ canvas{
   letter-spacing: 7.7px;
 }
 .openmenu{
-  background-color: #490355;
+  background-color: #430057;
 }
 .move-to-bottom{
   bottom: 0;
@@ -50,15 +68,12 @@ canvas{
 .move-to-top{
   bottom: 100vh;
 }
-
 .nav-content{
   visibility: hidden;
 }
-
 .nav-title:hover + .nav-content{
   visibility: visible;
 }
-
 .stroke{
   -webkit-text-stroke: 2px #FFFFFF;
 }
@@ -71,28 +86,30 @@ canvas{
 .about-third-page-gradient{
   background: linear-gradient(180deg, rgba(62,57,53,1) 50%, rgba(37,178,137,1) 50%);
 }
-
-
-
 /*Contact form custom css*/
 .wpcf7-form {
   color: #fff;
 }
 .wpcf7-form-control{
   background: transparent;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 .wpcf7-text, .wpcf7-textarea{
-  padding: 6px;
+  padding: 3px;
   border: 1px solid white;
   max-height: 75px;
+
 }
 .wpcf7-submit{
   border: 1px solid white;
-
-  margin-top: 15px;
+  margin-top: 5px;
   padding: 16px;
   border-radius: 50px;
+  cursor: pointer;
+}
+
+.wpcf7-submit:hover{
+  background-color: #ff6720;
 }
 .wpcf7 form .wpcf7-response-output{
   margin: 0 !important;
